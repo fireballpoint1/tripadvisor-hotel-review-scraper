@@ -13,45 +13,15 @@ pip install bs4
 ```
 
 ## Usage Scrapper
-Store all reviews of New York City:
+Store all reviews of Hotel Pan Pacific Singapore:
 ```python
-python tripadvisor-scrapper.py 60763 New_York_City_New_York
+python3 tripadvisor-scrapper.py 294265 d302294 Pan_Pacific_Singapore-Singapore
 ```
 
-Store all reviews of Paris:
-```python
-python tripadvisor-scrapper.py 187147 Paris_Ile_de_France
-```
-
-Store all reviews of Vienna:
-```python
-python tripadvisor-scrapper.py 190454 Vienna
-```
-
-The scrapper requires the ```city location id``` and the ```city name``` as commandline arguments.
-Both can be retrieved from the url, for example, ```https://www.tripadvisor.com/Hotels-g60763-New_York_City_New_York-Hotels.html```
-The ```city location id``` is the number after the g. The ```city name``` is the string from the dash after the ```city location id``` to the dash before ```Hotels```.
-
-Store all reviews of Vienna and additionally store the review urls list as pickle for rescraping later:
-```python
-python tripadvisor-scrapper.py 190454 vienna --pickle store
-```
-A pickle is stored in ```data/timestamp-cityname```
-
-
-Store all reviews of Vienna using a review urls list loaded from pickle/20160601-1522-vienna.pickle:
-```python
-python tripadvisor-scrapper.py 190454 Vienna --pickle load --filename 20160601-1522-vienna.pickle
-```
-
-A pickle to load has to be placed in the pickle directory at the same directory level as the ```tripadvisor-scrapper.py```
-
-## Usage Totalizer
-Put all reviews and hotel information of a city together:
-```python
-python tripadvisor-totalizer.py /Users/admin/tripadvisor-scrapper/data/20160716-202314-vienna
-```
+The scrapper requires the `city location id`, `hotel id` and the ```hotel+city name``` as commandline arguments.
+Both can be retrieved from the url, for example, `https://www.tripadvisor.com.sg/Hotel_Review-g294265-d302294-Reviews-Pan_Pacific_Singapore-Singapore.html`
+The ```city location id``` is the number after the g. The `hotel id` is the number after d. The ```hotel+city name``` is the string from the dash after the Reviews to the dot before ```html```.
 
 ## Author
-
+[Mayank Modi](mailto:mayank.modi.iiit@gmail.com)
 [Michael Andorfer](mailto:mandorfer.mmt-b2014@fh-salzburg.ac.at)

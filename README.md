@@ -23,5 +23,5 @@ Both can be retrieved from the url, for example, `https://www.tripadvisor.com.sg
 The ```city location id``` is the number after the g. The `hotel id` is the number after d. The ```hotel+city name``` is the string from the dash after the Reviews to the dot before ```html```.
 
 ## Author
-[Mayank Modi](mailto:mayank.modi.iiit@gmail.com)
-[Michael Andorfer](mailto:mandorfer.mmt-b2014@fh-salzburg.ac.at)
+- updated by: [Mayank Modi](mailto:mayank.modi.iiit@gmail.com)
+- source: [Michael Andorfer](mailto:mandorfer.mmt-b2014@fh-salzburg.ac.at)
